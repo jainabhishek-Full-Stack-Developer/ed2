@@ -1,0 +1,42 @@
+.customTabHome
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.adminTabsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+ 
+    padding: 0px;
+    width: auto;
+    background-color: transparent;
+    margin: 50px 0px 20px 0px;
+
+}
+
+.adminTabsContainer li button {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.adminTabsContainer li button:hover {
+    background: #e3e7eb;
+}
+
+.adminTabsContainer li button.adminActiveTabs {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    transition: all 0.3s ease;
+    
+}

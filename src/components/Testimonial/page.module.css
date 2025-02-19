@@ -1,0 +1,159 @@
+.testimonialHeading {
+    font-size: clamp(22px, 4vw, 28px);
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: 50px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.testimonialBgContainer {
+    background-color: #f2f2f2 !important;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+.testimonialText {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--light-gray) !important;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.testimonialContainer {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: clamp(20px, 3vw, 30px);
+    max-width: 90%;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+}
+
+.testimonialContent {
+    padding: 20px;
+}
+
+.testimonialContent ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonialContent ul li {
+
+    margin: 0px 10px 0px 0px;
+}
+
+.testimonialContent ul li .starIcon {
+
+    color: var(--star-color);
+}
+
+
+.testimonialContent img {
+    border-radius: 50%;
+    width: 150px;
+    /* Adjust to a more reasonable size */
+    height: 150px;
+    /* Make it a perfect circle */
+    object-fit: cover;
+    /* Ensures the image fills the circle */
+    border: 3px solid #f0f0f0;
+    /* Light border for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.testimonialTitle {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.testimonialText {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.testimonialAuthor {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 600;
+    color: var(--text-gray);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 10px;
+}
+
+.testimonialAuthor:before {
+    content: "— ";
+    color: var(--text-gray);
+}
+
+/* Navigation Arrows */
+.testimonialArrowPrev,
+.testimonialArrowNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.testimonialArrowPrev {
+    left: -30px;
+}
+
+.testimonialArrowNext {
+    right: -30px;
+}
+
+.testimonialIconLeft,
+.testimonialIconRight {
+    font-size: clamp(20px, 3vw, 24px);
+    color: var(--main-bgcolor);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonialContainer {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .testimonialArrowPrev {
+        left: 10px;
+    }
+
+    .testimonialArrowNext {
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .testimonialArrowPrev,
+    .testimonialArrowNext {
+        top: auto;
+        bottom: -40px;
+    }
+}

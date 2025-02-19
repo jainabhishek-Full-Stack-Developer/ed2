@@ -1,0 +1,106 @@
+.studentPannelSideMenu {
+    width: 200px;
+    background-color: #ffffff;
+    color: var(--text-black);
+    padding: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar-thumb {
+    background: #e2e2e2;
+    border-radius: 4px;
+}
+
+.studentPannelSideMenu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.studentPannelBrandSection {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.studentPannelDashboardLink {
+    background-color: var(--main-color);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 5px;
+    width: 180px;
+    margin-bottom: 10px;
+}
+
+.studentPannelDashboardLink a {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+
+.studentPannelSubMenuContainer {
+    margin-bottom: 50px;
+    padding: 0px 10px;
+}
+
+/* side bar */
+.dashboardTitle {
+    font-size: 16px;
+    color: var(--text-black);
+    text-transform: capitalize;
+    padding: 10px 0px 0px 10px;
+
+}
+
+.dashboardTitle:last-child {
+    margin-bottom: 50px !important;
+}
+
+.dashboardTitle a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dashboardTitle a .icon {
+    background-color: var(--main-color);
+    color: var(--text-white);
+    padding: 8px;
+    font-size: 32px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboardTitle a span {
+    margin-left: 10px;
+}
+.dashboardTitle a span:hover {
+    color: var(--main-color);
+}
+
+
+.stduentPannelLogo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+@media all and (max-width:768px) {
+    .studentPannelSideMenu {
+        display: none;
+    }
+
+}

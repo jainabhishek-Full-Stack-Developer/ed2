@@ -1,0 +1,178 @@
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.teacher,
+.time {
+    font-size: 14px;
+    color: #222;
+}
+
+.reviewBtn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.classesTypeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.formUpdateHeading {
+    margin-bottom: 15px;
+}
+
+
+
+
+.formBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+    margin: 5px;
+
+}
+
+.inputGroup label {
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+.inputGroup input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.inputGroup input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+.inputGroup textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+    width: 100%;
+}
+
+.inputGroup textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submitBtn {
+
+    margin-top: 0.9rem;
+
+}
+
+.submitBtn button {
+    padding: 0.8rem;
+    background: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.submitBtn button:hover {
+    background: #0056b3;
+}
+
+.feedbackContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.feedbackContainer p {
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feedbackContainer span {
+    text-align: center;
+    font-size: 14px;
+    color: var(--light-gray);
+}
+
+.feedBackSimpleBox {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feedBackButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feedBackButton:hover {
+    transform: scale(1.1);
+}
+
+.feedBackIcon {
+    transition: color 0.3s ease-in-out;
+}

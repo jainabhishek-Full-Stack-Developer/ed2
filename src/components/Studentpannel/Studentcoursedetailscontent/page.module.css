@@ -1,0 +1,62 @@
+.sessionList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sessionCard {
+    background: #f1f1f1;
+    /* Light Yellow */
+    border-left: 5px solid #aeaeae;
+    /* Golden Border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sessionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.sessionHeader:hover {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.sessionInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sessionTime {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.icon {
+    color: #2C3E50;
+}
+
+.sessionDetails {
+    padding: 10px;
+    background: #f1f1f1;
+    /* Slightly darker yellow */
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}

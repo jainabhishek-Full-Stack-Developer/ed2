@@ -1,0 +1,51 @@
+.studentPanelWrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.studentPanelWrapperMainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.studentPanelWrapperHeaderBox {
+    position: fixed;
+    top: 0;
+    left: 200px;
+    right: 0;
+    height: 40px;
+    z-index: 10;
+}
+
+.studentPanelWrapperContentBox {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #F8F9FA;
+    flex-grow: 1;
+}
+
+.studentPanelWrapperFooterBox {
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    height: 40px;
+    z-index: 0;
+}
+
+
+@media all and (max-width:768px) {
+
+    .studentPanelWrapperHeaderBox,
+    .studentPanelWrapperFooterBox {
+        left: 0px;
+    }
+
+}

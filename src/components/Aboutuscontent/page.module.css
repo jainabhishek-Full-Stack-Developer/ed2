@@ -1,0 +1,254 @@
+.aboutUsHeading {
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: clamp(50px, 10vw, 100px) 0px 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* About Section */
+.aboutSectionTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    gap: 40px;
+}
+
+.aboutImageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutImageContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aboutContent {
+    flex: 1;
+    max-width: 600px;
+}
+
+.aboutContent h2 {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 15px;
+}
+
+.aboutContent p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--light-gray);
+    margin-bottom: 12px;
+}
+
+/* Mission & Vision Section */
+.missionVisionSection {
+    text-align: center;
+    padding: 60px 5%;
+    background-color: var(--main-bgcolor);
+}
+
+.missionVisionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.missionBox,
+.visionBox {
+    flex: 1;
+    max-width: 500px;
+    padding: 30px;
+    background: var(--main-bgcolor);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.missionBox h3,
+.visionBox h3 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.missionBox p,
+.visionBox p {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+    color: var(--light-gray);
+}
+
+/* Why Choose Us */
+.whyChooseSection {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: var(--main-bgcolor);
+}
+
+.sectionTitle {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: var(--text-black);
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.whyChooseText {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--light-gray) !important;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Features List */
+.featuresList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.featureItem {
+    background: var(--main-bgcolor);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 360px;
+}
+
+.courseWhyIconWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureItem h3 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.featureItem ul {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: var(--light-gray);
+    list-style-type: none;
+    padding-left: 10px;
+    line-height: 1.8;
+}
+
+.featureItem ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Icons */
+.iconContainer {
+    background-color: var(--main-color);
+    color: var(--main-bgcolor);
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .aboutSectionTop {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutImageContainer {
+        order: -1;
+    }
+
+    .aboutContent {
+        max-width: 100%;
+    }
+
+    .missionVisionContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .missionBox,
+    .visionBox {
+        max-width: 100%;
+    }
+
+    .featuresList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutUsHeading {
+        font-size: 22px;
+    }
+
+    .aboutContent h2 {
+        font-size: 1.6rem;
+    }
+
+    .aboutContent p {
+        font-size: 1rem;
+    }
+
+    .missionBox h3,
+    .visionBox h3 {
+        font-size: 1.5rem;
+    }
+
+    .whyChooseText {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutUsHeading {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+    .aboutContent h2 {
+        font-size: 1.4rem;
+    }
+
+    .aboutContent p {
+        font-size: 0.95rem;
+    }
+
+    .whyChooseText {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .featuresList {
+        grid-template-columns: 1fr;
+    }
+}

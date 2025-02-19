@@ -1,0 +1,32 @@
+.statusBadge {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.failed {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.joined {
+    color: green;
+    font-weight: bold;
+}
+
+.notJoined {
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,276 @@
+/* General Styles */
+:root {
+    --main-color: #3498db; /* Example main color */
+    --light-gray: #7f8c8d; /* Example light gray color */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Why Choose Section */
+.whyChooseHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: 100px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.whyChooseText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--light-gray);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.whyChooseBgContainer {
+    background-color: #f2f2f2;
+    padding: 100px 20px;
+    width: 100%;
+}
+
+.whyChooseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.whySellerCard {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whySellerCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.whySellerCardIcon {
+    font-size: 48px;
+    color: #fff;
+    flex-shrink: 0;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.whySellerCard h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.whySellerCard p {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Student Hero Section */
+.studentHeroSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    gap: 40px;
+}
+
+.studentHeroContent {
+    max-width: 600px;
+}
+
+.studentHeroTitle {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.studentHeroText {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.studentHeroButtons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.studentExploreHeroBtn,
+.studentSignupHeroBtn {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+}
+
+.studentExploreHeroBtn {
+    background: transparent;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.studentExploreHeroBtn:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.studentSignupHeroBtn {
+    background: var(--main-color);
+    color: #fff;
+    border: none;
+}
+
+.studentSignupHeroBtn:hover {
+    background: darken(var(--main-color), 10%);
+}
+
+.studentHeroImageWrapper {
+    max-width: 500px;
+    width: 100%;
+}
+
+.studentHeroImage {
+    width: 100%;
+    height: auto;
+}
+
+/* Courses Section */
+.coursesHeading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: 100px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.coursesText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--light-gray);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .studentHeroSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .studentHeroImageWrapper {
+        max-width: 400px;
+        display: none;
+    }
+    .studentHeroButtons
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        align-items: baseline;
+    }
+}
+
+@media (max-width: 768px) {
+    .whySellerCard {
+        width: 100%;
+    }
+
+    .studentHeroImageWrapper {
+        max-width: 300px;
+        display: none;
+    }
+
+    .studentHeroTitle {
+        font-size: 2rem;
+    }
+
+    .studentHeroText {
+        font-size: 1rem;
+    }
+
+    .studentExploreHeroBtn,
+    .studentSignupHeroBtn {
+        font-size: 0.875rem;
+        padding: 10px 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .whyChooseHeading,
+    .coursesHeading {
+        font-size: 1rem;
+        margin: 50px 0 20px;
+    }
+
+    .whyChooseText,
+    .coursesText {
+        font-size: 0.8rem;
+        padding: 0 10px;
+    }
+
+    .whySellerCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .whySellerCardIcon {
+        margin-bottom: 10px;
+    }
+
+    .studentHeroImageWrapper {
+        max-width: 100%;
+        display: none;
+    }
+
+    .studentHeroTitle {
+        font-size: 1.75rem;
+    }
+
+    .studentHeroText {
+        font-size: 0.875rem;
+    }
+
+    .studentExploreHeroBtn,
+    .studentSignupHeroBtn {
+        font-size: 0.875rem;
+        padding: 8px 12px;
+    }
+}

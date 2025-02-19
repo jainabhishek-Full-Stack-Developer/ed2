@@ -1,0 +1,125 @@
+.footer {
+    background-color: #111827;
+    color: #d1d5db;
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+/* Brand Section */
+.brandSection {
+    max-width: 400px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.description {
+    font-size: 18px;
+    color: #9ca3af;
+    margin-top: 10px;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.icon {
+    font-size: 24px;
+    color: #9ca3af;
+    transition: color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    color: white;
+}
+
+/* Links Section */
+.linkColumns {
+    display: flex;
+    gap: 50px;
+}
+
+.column {
+    flex: 1;
+}
+
+.columnTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.columnList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLink {
+    display: block;
+    font-size: 16px;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 0;
+}
+
+.footerLink:hover {
+    color: white;
+}
+
+/* Divider */
+.divider {
+    margin: 30px 0;
+    border: 1px solid #1f2937;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+@media all and (max-width:768px) {
+    .brandSection
+    {
+        width: 100%;
+    }
+    .gridContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

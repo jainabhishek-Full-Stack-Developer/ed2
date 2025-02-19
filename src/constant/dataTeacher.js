@@ -1,0 +1,122 @@
+export const dataTeacher = [
+    {
+        id: 1,
+        uuid: "de818f2e-e8fb-49a6-af70-97a81fd28672",
+        firstName: "John",
+        lastName: "Doe",
+        age: "35 years",
+        gender: "Male",
+        educationQualification: "M.Ed",
+        experience: "20 years",
+        email: "john@gmail.com",
+        password: "John@#58"
+    },
+    {
+        id: 2,
+        uuid: "a3f1c2d4-b5e6-7890-ab12-cd34ef56gh78",
+        firstName: "Anil",
+        lastName: "Kumar",
+        age: "40 years",
+        gender: "Male",
+        educationQualification: "PhD in Education",
+        experience: "20 years",
+        email: "anil@gmail.com",
+        password: "Anil@#59"
+    },
+    {
+        id: 3,
+        uuid: "b4e2d3f5-c6g7-8910-bc23-de45fg67hi89",
+        firstName: "Rahul",
+        lastName: "Sharma",
+        age: "30 years",
+        gender: "Male",
+        educationQualification: "B.Ed",
+        experience: "20 years",
+        email: "rahul@gmail.com",
+        password: "Rahul@#60"
+    },
+    {
+        id: 4,
+        uuid: "c5f3e4g6-d7h8-9012-cd34-ef56gh78ij90",
+        firstName: "Priya",
+        lastName: "Mehta",
+        age: "28 years",
+        gender: "Female",
+        educationQualification: "M.Ed",
+        experience: "20 years",
+        email: "priya@gmail.com",
+        password: "Priya@#61"
+    },
+    {
+        id: 5,
+        uuid: "d6g4f5h7-e8i9-0123-de45-fg67hi89jk01",
+        firstName: "Sanjay",
+        lastName: "Patel",
+        age: "45 years",
+        gender: "Male",
+        educationQualification: "PhD in Mathematics",
+        experience: "20 years",
+        email: "sanjay@gmail.com",
+        password: "Sanjay@#62"
+    },
+    {
+        id: 6,
+        uuid: "e7h5g6i8-f9j0-1234-ef56-gh78ij90kl12",
+        firstName: "Aisha",
+        lastName: "Khan",
+        age: "32 years",
+        gender: "Female",
+        educationQualification: "M.A. in English",
+        experience: "20 years",
+        email: "aisha@gmail.com",
+        password: "Aisha@#63"
+    },
+    {
+        id: 7,
+        uuid: "f8i6h7j9-g0k1-2345-fg67-hi89jk01lm23",
+        firstName: "Vikram",
+        lastName: "Singh",
+        age: "38 years",
+        gender: "Male",
+        educationQualification: "M.Sc in Physics",
+        experience: "20 years",
+        email: "vikram@gmail.com",
+        password: "Vikram@#64"
+    },
+    {
+        id: 8,
+        uuid: "g9j7i8k0-h1l2-3456-gh78-ij90kl12mn34",
+        firstName: "Neha",
+        lastName: "Verma",
+        age: "29 years",
+        gender: "Female",
+        educationQualification: "M.Ed",
+        experience: "20 years",
+        email: "neha@gmail.com",
+        password: "Neha@#65"
+    },
+    {
+        id: 9,
+        uuid: "h0k8j9l1-i2m3-4567-hi89-jk01lm23no45",
+        firstName: "Amit",
+        lastName: "Yadav",
+        age: "36 years",
+        gender: "Male",
+        educationQualification: "M.Ed",
+        experience: "20 years",
+        email: "amit@gmail.com",
+        password: "Amit@#66"
+    },
+    {
+        id: 10,
+        uuid: "i1l9k0m2-j3n4-5678-ij90-kl12mn34op56",
+        firstName: "Sara",
+        lastName: "Kapoor",
+        age: "34 years",
+        gender: "Female",
+        educationQualification: "PhD in Education",
+        experience: "20 years",
+        email: "sara@gmail.com",
+        password: "Sara@#67"
+    }
+];

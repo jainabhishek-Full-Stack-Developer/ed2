@@ -1,0 +1,234 @@
+.newBookingStepContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 100px 0;
+  position: relative;
+}
+
+.stepContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.stepCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s;
+  margin: 0px 100px;
+}
+
+.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.deactive {
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+
+.stepLabel {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.stepLine {
+  width: 130px;
+  height: 4px;
+  background-color: #ddd;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(50%);
+  margin: 0px 10px;
+}
+
+.stepContainer:last-child .stepLine {
+  display: none;
+}
+
+.navigationButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.navigationButtons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigationButtons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.personalDetailsHomeContainer {
+  margin: 0px 150px;
+}
+
+
+/* styles/Batchhome.module.css */
+/* styles/page.module.css */
+
+.classBookingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   position: relative;
+  margin-bottom: 150px;
+ 
+}
+
+.classOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.3);
+  /* Light overlay */
+  backdrop-filter: blur(5px);
+  /* Optional blur effect */
+  z-index: -1;
+}
+
+.classBookingBox {
+  width: 600px;
+  padding: 0ox 25px 25px 25px ;
+  border-radius: 15px;
+  background-color: #ffffff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.classMessage {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4caf50;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classIcon {
+  margin-bottom: 20px;
+  animation: bounce 1.2s ease-out infinite;
+  /* New bounce animation */
+}
+
+.classCheckmark {
+  font-size: 70px;
+  color: #4caf50;
+}
+
+.classMessageText {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: -10px;
+
+}
+
+.classInfoContainer {
+  margin-top: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.classInfoText {
+  width: 400px;
+  font-size: 0.8rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.classButton {
+  padding: 14px 35px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  /* Button scale effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.classButton:active {
+  transform: scale(0.98);
+  /* Slight shrink on click */
+}
+
+.classButton:focus {
+  outline: none;
+}

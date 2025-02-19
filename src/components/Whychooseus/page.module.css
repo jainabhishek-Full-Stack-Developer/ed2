@@ -1,0 +1,116 @@
+.whyChooseHeading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: 50px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.whyChooseBgContainer {
+    background-color: #f2f2f2;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+.whyChooseText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--light-gray) !important;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.whyChooseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 0 50px;
+
+}
+
+.whySellerCard {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    width: 45%;
+    cursor: pointer;
+}
+
+.whySellerCardIcon {
+    font-size: 48px;
+    color: var(--main-bgcolor);
+    flex-shrink: 0;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+}
+
+.whySellerCard h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 15px 0px;
+}
+
+.whySellerCard p {
+    font-size: 16px;
+    color: #444;
+    margin: 12px 0px;
+    text-align: justify;
+
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .whyChooseContainer {
+        gap: 20px;
+    }
+
+    .whySellerCard {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .whyChooseContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .whySellerCard {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whyChooseHeading {
+        font-size: clamp(20px, 4vw, 24px);
+    }
+
+    .whyChooseText {
+        font-size: 1rem;
+    }
+
+    .whySellerCard {
+        width: 95%;
+    }
+
+    .whySellerCard h4 {
+        font-size: clamp(16px, 4vw, 20px);
+    }
+
+
+}

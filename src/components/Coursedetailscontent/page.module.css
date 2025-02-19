@@ -1,0 +1,408 @@
+.courseDetailsContainer {
+
+    margin: auto;
+    padding: 0px;
+}
+
+.courseDetailsHeroSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px !important;
+}
+
+.courseDetailsHeroSection div:first-child {
+    width: 40%;
+}
+
+.courseDetailsHeroSection div:last-child {
+    width: 50%;
+}
+
+.courseDetailsHeroSection div:last-child img {
+    width: 100%;
+}
+
+/* Hero Section */
+.courseDetailsHero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("/images/c8.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    margin: 20px;
+    overflow: hidden; /* Ensures child elements don't overflow the border radius */
+    z-index: 1;
+    color: #fff;
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+}
+
+.courseDetailsHero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Places the overlay behind the content */
+    border-radius: inherit; /* Matches the parent's border radius */
+}
+
+
+.courseDetailsHeroText {
+    max-width: 600px;
+}
+
+.courseDetailsHero h1 {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.courseDetailsHero p {
+    color: #f2f2f2f2;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.courseDetailsEnrollButton {
+    background: var(--main-color);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.courseDetailsHeroImage {
+    width: 400px;
+    border-radius: 12px;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .courseDetailsHero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .courseDetailsHeroImage {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* courseDetailsHighlights */
+.courseDetailsHighlightsSection {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    /* Light background for better contrast */
+    border-radius: 12px;
+
+}
+
+.courseDetailsTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.courseDetailsHighlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.courseDetailsCardHighlight {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-left: 4px solid var(--main-color);
+    height: 100px;
+}
+
+.courseDetailsCardHighlight:hover {
+    transform: scale(1.05);
+    /* Slight hover effect */
+}
+
+
+
+.courseDetailsCardTextContainer h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.courseDetailsCardTextContainer p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0 0;
+}
+
+.courseDetailsCardIconContainer {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.courseDetailsCardIcon {
+    font-size: 28px;
+    color: white;
+}
+
+.courseDetailsCardtextContainer {
+    margin-top: 15px;
+}
+
+.courseDetailsCardtextContainer h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.courseDetailsCardtextContainer p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive courseDetailsHighlights */
+@media (max-width: 768px) {
+    .courseDetailsHighlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* Course Overview */
+/* Main container */
+
+.courseWhyHeading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 100px 0px 10px 0px;
+}
+
+
+.courseWhyText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--light-gray) !important;
+    text-align: center;
+    max-width: 700px;
+    margin: 0px auto 100px auto;
+}
+
+.courseWhy {
+    padding: 80px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+/* Flexbox container */
+.courseWhyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Course Why Card */
+.courseWhyCard {
+    flex: 1;
+    min-width: 300px;
+    max-width: 32%;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.courseWhyCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+.courseWhyCardIcon {
+    font-size: 60px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Title */
+.courseWhyCard h4 {
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: 600;
+    color: #333;
+}
+
+/* List */
+.courseWhyCard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.courseWhyCard ul li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .courseWhyContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .courseWhyCard {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .courseWhyContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courseWhyCard {
+        max-width: 100%;
+    }
+}
+
+
+/*  */
+
+.instructorCardWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 150px;
+}
+.instructorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.instructorImage img {
+    width: 100%;
+    height: auto;
+}
+
+.instructorInfo {
+    padding: 20px;
+    text-align: center;
+}
+
+.instructorName {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.instructorTitle {
+    font-size: 1rem;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.instructorDetail {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.instructorDetail .icon {
+    font-size: 1.125rem;
+    color: #007bff;
+    margin-right: 8px;
+}
+
+.instructorBio {
+    font-size: 0.875rem;
+    color: #666666;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .instructorCard {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .instructorImage, .instructorInfo {
+        flex: 1;
+    }
+
+    .instructorImage img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .instructorInfo {
+        text-align: left;
+        padding: 40px;
+    }
+}

@@ -1,0 +1,90 @@
+.container {
+
+    margin: 40px auto;
+    padding: 30px;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.privacyPolicyHeading {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: 50px 0 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.container div:first-child {
+    margin-bottom: 100px;
+}
+
+.section {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.heading {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.list {
+    padding-left: 25px;
+}
+
+.listItem {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    position: relative;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.listItem::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #444;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .listItem {
+        font-size: 15px;
+    }
+}

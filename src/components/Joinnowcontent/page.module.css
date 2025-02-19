@@ -1,0 +1,91 @@
+
+.joinContent {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('/images/join-us.jpg');
+    background-size: cover;
+    background-position: center;
+    color:var(--main-bgcolor);
+    padding: 80px 40px;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.joinTextSection {
+    background-color: var(--main-bgcolor);
+    color: #333;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin-top: -40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.joinTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-bgcolor);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.joinDescription {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: var(--main-bgcolor);
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.joinCTA {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: var(--text-white);
+    font-size: 1.1rem;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.joinCTA:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .joinTitle {
+        font-size: 2.5rem;
+    }
+
+    .joinDescription {
+        font-size: 1.1rem;
+        padding: 0 20px;
+    }
+
+    .joinCTA {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .joinTitle {
+        font-size: 2rem;
+    }
+
+    .joinDescription {
+        font-size: 1rem;
+    }
+
+    .joinCTA {
+        font-size: 0.95rem;
+        padding: 10px 25px;
+    }
+}

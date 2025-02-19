@@ -1,0 +1,44 @@
+.coursesHeading {
+    font-size: clamp(24px, 5vw, 32px); /* Adjusts between 24px to 32px */
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    margin: clamp(50px, 10vw, 100px) 0px 20px 0px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.coursesText {
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Adjusts between 1rem to 1.2rem */
+    line-height: 1.6;
+    color: var(--light-gray) !important;
+    text-align: center;
+    max-width: 90%; /* Makes sure it doesn’t overflow */
+    margin: 0 auto;
+    padding: 0 15px; /* Adds some padding for small screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .coursesHeading {
+        margin-top: 60px;
+    }
+
+    .coursesText {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .coursesHeading {
+        font-size: 22px; /* Smaller font for mobile */
+        margin-top: 40px;
+    }
+
+    .coursesText {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
