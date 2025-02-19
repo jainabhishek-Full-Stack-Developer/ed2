@@ -56,7 +56,7 @@ const Aboutuscontent = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.whyChooseSection}>
+                {/* <div className={styles.whyChooseSection}>
                     <h2 className={styles.aboutUsHeading}>Why Choose CourseHive?</h2>
                     <p className={styles.whyChooseText}>We stand out from the rest by offering a unique learning experience backed by the following features:</p>
                     <div className={styles.featuresList}>
@@ -121,9 +121,10 @@ const Aboutuscontent = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-                <Testimonial />
+                </div> */}
                 <Joinnowcontent />
+                <Testimonial />
+               
             </section>
         </Mainstudentwrapper>
     )

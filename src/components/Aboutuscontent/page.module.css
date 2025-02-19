@@ -50,6 +50,7 @@
     line-height: 1.6;
     color: var(--light-gray);
     margin-bottom: 12px;
+    text-align: justify;
 }
 
 /* Mission & Vision Section */
@@ -91,6 +92,7 @@
     font-size: clamp(1rem, 2.5vw, 1.1rem);
     line-height: 1.6;
     color: var(--light-gray);
+    text-align: justify;
 }
 
 /* Why Choose Us */
